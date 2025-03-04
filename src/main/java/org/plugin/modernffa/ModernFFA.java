@@ -67,7 +67,7 @@ public class ModernFFA extends JavaPlugin {
 
     private void registerListeners() {
         Bukkit.getPluginManager().registerEvents(new PlayerDeathListener(this), this);
-        Bukkit.getPluginManager().registerEvents(new PlayerKillListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerKillListener(this), this);
         Bukkit.getPluginManager().registerEvents(new PlayerHitListener(), this);
     }
 
